@@ -1,0 +1,27 @@
+{
+  "name": "@coreym/eslint-config-cm",
+  "version": "0.0.1",
+  "description": "Personal eslint config",
+  "main": "index.js",
+  "keywords": [
+    "eslint"
+  ],
+  "files": [
+    "index.js",
+    ".prettierrc"
+  ],
+  "author": "Corey M.",
+  "license": "MIT",
+  "dependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": ">= 1.13"
+  }
+}
