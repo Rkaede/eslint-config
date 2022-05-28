@@ -1,7 +1,13 @@
 module.exports = {
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   env: {
     browser: true,
   },
+  plugins: ['@typescript-eslint'],
   extends: [
     'eslint:recommended',
     'plugin:jsx-a11y/strict',
@@ -10,12 +16,9 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:import/typescript',
   ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    sourceType: 'module',
-    ecmaVersion: 2020,
-    ecmaFeatures: {
-      jsx: true,
-    },
+    ecmaVersion: 'latest',
   },
   rules: {
     'prettier/prettier': [
