@@ -21,6 +21,7 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   rules: {
+    'react/react-in-jsx-scope': 'off',
     'prettier/prettier': [
       'error',
       { singleQuote: true, endOfLine: 'auto', jsxSingleQuote: false },
