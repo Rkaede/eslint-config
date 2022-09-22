@@ -5,7 +5,7 @@
 1. Install the package and peer dependencies:
 
 ```bash
-npm install -D coreymcg/eslint-config#v0.0.1 eslint prettier
+npm install -D coreymcg/eslint-config#v0.0.2 eslint prettier
 ```
 
 2. Create a config file:
