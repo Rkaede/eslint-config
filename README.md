@@ -8,7 +8,13 @@
 npm install -D coreymcg/eslint-config#v0.0.1 eslint prettier
 ```
 
-2. Extend this package:
+2. Create a config file:
+
+```bash
+touch .eslintrc
+```
+
+3. Extend this package:
 
 ```json
 {
@@ -16,7 +22,7 @@ npm install -D coreymcg/eslint-config#v0.0.1 eslint prettier
 }
 ```
 
-3. Update npm scripts
+4. Update npm scripts
 
 ```json
 {
