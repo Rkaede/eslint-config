@@ -33,17 +33,17 @@ module.exports = {
         'import/parsers': {
           '@typescript-eslint/parser': ['.ts', '.tsx'],
         },
-        'import/resolver': {
-          typescript: {
-            project: './tsconfig.json',
-          },
-        },
+        // 'import/resolver': {
+        //   typescript: {
+        //     project: './tsconfig.json',
+        //   },
+        // },
       },
       parser: '@typescript-eslint/parser',
-      parserOptions: {
-        tsconfigRootDir: __dirname,
-        project: './tsconfig.json',
-      },
+      // parserOptions: {
+      //   tsconfigRootDir: __dirname,
+      //   project: './tsconfig.json',
+      // },
       plugins: ['@typescript-eslint'],
       extends: [
         'eslint:recommended',
