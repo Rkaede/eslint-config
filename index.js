@@ -18,6 +18,7 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   rules: {
+    'no-unused-vars': 'warn',
     'react/react-in-jsx-scope': 'off',
     'prettier/prettier': [
       'error',
@@ -53,6 +54,7 @@ module.exports = {
         'plugin:import/typescript',
       ],
       rules: {
+        'no-unused-vars': 'warn',
         'react/react-in-jsx-scope': 'off',
         'prettier/prettier': [
           'error',
