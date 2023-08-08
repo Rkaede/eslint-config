@@ -26,12 +26,17 @@ module.exports = {
     ],
     'import/first': 'error',
   },
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx', '.js', '.jsx'],
+    },
+  },
   overrides: [
     {
       files: ['**/*.{ts,tsx}'],
       settings: {
         'import/parsers': {
-          '@typescript-eslint/parser': ['.ts', '.tsx'],
+          '@typescript-eslint/parser': ['.ts', '.tsx', '.js', '.jsx'],
         },
       },
       parser: '@typescript-eslint/parser',
