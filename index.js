@@ -45,13 +45,14 @@ module.exports = {
         'plugin:import/typescript',
       ],
       rules: {
-        'no-unused-vars': 'warn',
-        'react/react-in-jsx-scope': 'off',
+        '@typescript-eslint/no-unused-vars': ['error'],
         'prettier/prettier': [
           'error',
           { singleQuote: true, endOfLine: 'auto', jsxSingleQuote: false },
         ],
         'import/first': 'error',
+        'react/react-in-jsx-scope': 'off',
+        'no-unused-vars': 'off',
       },
     },
   ],
