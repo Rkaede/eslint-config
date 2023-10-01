@@ -1,12 +1,8 @@
 module.exports = {
-  settings: {
-    react: {
-      version: 'detect',
-    },
-  },
   env: {
     browser: true,
   },
+  plugins: ['prettier'],
   extends: [
     'eslint:recommended',
     'plugin:jsx-a11y/strict',
@@ -26,15 +22,18 @@ module.exports = {
     ],
     'import/first': 'error',
   },
-  plugins: ['prettier'],
+
   settings: {
+    react: {
+      version: 'detect',
+    },
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx', '.js', '.jsx'],
     },
     'import/resolver': {
       node: {
-        extensions: ['.ts', '.tsx'],
-        moduleDirectory: ['src', 'node_modules'],
+        typescript: false,
+        node: true,
       },
     },
   },
@@ -42,18 +41,6 @@ module.exports = {
   overrides: [
     {
       files: ['**/*.{ts,tsx}'],
-      settings: {
-        'import/parsers': {
-          '@typescript-eslint/parser': ['.ts', '.tsx', '.js', '.jsx'],
-        },
-        'import/resolver': {
-          node: {
-            typescript: true,
-            node: true,
-          },
-        },
-      },
-      parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint', 'prettier'],
       extends: [
         'eslint:recommended',
@@ -63,6 +50,14 @@ module.exports = {
         'plugin:import/typescript',
         'prettier',
       ],
+      settings: {
+        'import/resolver': {
+          node: {
+            typescript: true,
+            node: true,
+          },
+        },
+      },
       rules: {
         '@typescript-eslint/no-unused-vars': ['error'],
         'prettier/prettier': [
