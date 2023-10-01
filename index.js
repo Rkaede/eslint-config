@@ -26,6 +26,7 @@ module.exports = {
     ],
     'import/first': 'error',
   },
+  plugins: ['prettier'],
   settings: {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx', '.js', '.jsx'],
@@ -53,7 +54,7 @@ module.exports = {
         },
       },
       parser: '@typescript-eslint/parser',
-      plugins: ['@typescript-eslint'],
+      plugins: ['@typescript-eslint', 'prettier'],
       extends: [
         'eslint:recommended',
         'plugin:jsx-a11y/strict',
