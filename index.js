@@ -31,7 +31,10 @@ module.exports = {
       '@typescript-eslint/parser': ['.ts', '.tsx', '.js', '.jsx'],
     },
     'import/resolver': {
-      typescript: {},
+      node: {
+        extensions: ['.ts', '.tsx'],
+        moduleDirectory: ['src', 'node_modules'],
+      },
     },
   },
   // for typescript
@@ -43,7 +46,10 @@ module.exports = {
           '@typescript-eslint/parser': ['.ts', '.tsx', '.js', '.jsx'],
         },
         'import/resolver': {
-          typescript: {},
+          node: {
+            extensions: ['.ts', '.tsx'],
+            moduleDirectory: ['src', 'node_modules'],
+          },
         },
       },
       parser: '@typescript-eslint/parser',
