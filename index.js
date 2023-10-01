@@ -30,6 +30,9 @@ module.exports = {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx', '.js', '.jsx'],
     },
+    'import/resolver': {
+      typescript: {},
+    },
   },
   // for typescript
   overrides: [
@@ -38,6 +41,9 @@ module.exports = {
       settings: {
         'import/parsers': {
           '@typescript-eslint/parser': ['.ts', '.tsx', '.js', '.jsx'],
+        },
+        'import/resolver': {
+          typescript: {},
         },
       },
       parser: '@typescript-eslint/parser',
