@@ -13,6 +13,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:prettier/recommended',
     'plugin:import/recommended',
+    'prettier',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -61,6 +62,7 @@ module.exports = {
         'plugin:prettier/recommended',
         'plugin:import/recommended',
         'plugin:import/typescript',
+        'prettier',
       ],
       rules: {
         '@typescript-eslint/no-unused-vars': ['error'],
